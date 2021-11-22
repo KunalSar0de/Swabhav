@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector", "Reflector\Reflector.csproj", "{0D54235A-3626-4EC8-8F01-DE32B2E4461F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D54235A-3626-4EC8-8F01-DE32B2E4461F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D54235A-3626-4EC8-8F01-DE32B2E4461F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D54235A-3626-4EC8-8F01-DE32B2E4461F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D54235A-3626-4EC8-8F01-DE32B2E4461F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80435BEB-8E4F-4A9A-B284-08FC7A7B6303}
+	EndGlobalSection
+EndGlobal

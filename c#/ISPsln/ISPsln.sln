@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPSolution", "ISPSolution\ISPSolution.csproj", "{0D8134BF-349E-4680-A8DA-7A81C5C08283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPViolation", "ISPViolation\ISPViolation.csproj", "{0C6264F8-13DA-4CAF-BD24-80F4D1B575FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D8134BF-349E-4680-A8DA-7A81C5C08283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8134BF-349E-4680-A8DA-7A81C5C08283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8134BF-349E-4680-A8DA-7A81C5C08283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8134BF-349E-4680-A8DA-7A81C5C08283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6264F8-13DA-4CAF-BD24-80F4D1B575FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6264F8-13DA-4CAF-BD24-80F4D1B575FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6264F8-13DA-4CAF-BD24-80F4D1B575FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6264F8-13DA-4CAF-BD24-80F4D1B575FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CD42EBB-2E30-432E-A922-75AC9754ED76}
+	EndGlobalSection
+EndGlobal

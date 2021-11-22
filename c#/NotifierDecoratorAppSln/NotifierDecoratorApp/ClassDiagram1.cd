@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NotifierDecoratorApp.ConcreteComponent.Customer" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAgAAAAAACAADAAAAAQAAAABAAAAAACAAAAAA=</HashCode>
+      <FileName>ConcreteComponent\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotifierDecoratorApp.ConcreteComponent.StandardNotifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAACAAAIAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteComponent\StandardNotifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotifierDecoratorApp.Decorator.FacebookNotifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAIAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\FacebookNotifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotifierDecoratorApp.Decorator.SmsNotifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAIAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\SmsNotifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotifierDecoratorApp.Decorator.WpNotifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAIAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\WpNotifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NotifierDecoratorApp.Program" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NotifierDecoratorApp.Component.INotifier" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Component\INotifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

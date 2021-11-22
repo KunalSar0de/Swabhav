@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DecoratorPatternApp.ConcreteComponent.PremiumHat" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ConcreteComponent\PremiumHat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DecoratorPatternApp.ConcreteComponent.StandardHat" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ConcreteComponent\StandardHat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DecoratorPatternApp.ConcreteDecorator.GoldenHat" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteDecorator\GoldenHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecoratorPatternApp.ConcreteDecorator.RibbonHat" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteDecorator\RibbonHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DecoratorPatternApp.Decorator.HatDecorator">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Decorator\HatDecorator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DecoratorPatternApp.Program">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DecoratorPatternApp.Component.IHat">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Component\IHat.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
