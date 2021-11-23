@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            var groceries = ["Milk", "Eggs", "Frosted Flakes", "Salami","Juice"];
+            document.write("Array using for loop:");
+            for (let i = 0; i < groceries.length; i++) {
+                const element = groceries[i];
+                document.writeln("<br>"+element);               
+            }
+            //removing last item
+            var lastItem=groceries.pop();
+            document.writeln("<br>Removed last item from array:");
+            document.writeln(lastItem);
+
+            //removing first item
+            var firstItem = groceries.shift();
+            document.writeln("<br>Removed first item from array:");
+            document.writeln(firstItem);
+        </script>
+        
+        
+    </body>
+</html>

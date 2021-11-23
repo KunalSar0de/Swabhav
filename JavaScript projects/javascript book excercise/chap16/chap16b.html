@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+           var person = {
+                getName: function () {
+                    return "Name is " + this.firstName + " " + this.lastName;
+                }
+            };          
+           
+            var funnyGuy = Object.create(person);
+            funnyGuy.firstName = "Kunal";
+            funnyGuy.lastName = "Sarode"
+
+            var oldGuy = Object.create(person);
+            oldGuy.firstName = "Ravi";
+            oldGuy.lastName = "Shastri"
+
+            var DudeGuy = Object.create(person);
+            DudeGuy.firstName = "Soham";
+            DudeGuy.lastName = "Sarode"
+        
+
+            alert(funnyGuy.getName());
+            alert(DudeGuy.getName());
+        
+        </script>
+        
+        
+    </body>
+</html>
+
+

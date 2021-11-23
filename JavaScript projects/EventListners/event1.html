@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Click me</button>
+<script>
+function GodListener() {
+    console.log("God is listning");
+}
+
+function EvilListener() {
+    console.log("Evil is listning");
+}
+
+var btnClickMe=document.querySelector("#btn");
+btnClickMe.addEventListener("click",GodListener);
+btnClickMe.addEventListener("click",EvilListener);
+</script>
+
+</body>
+</html>

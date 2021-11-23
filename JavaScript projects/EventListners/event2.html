@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h2>Event 2</h2>
+        <button id="btn1">Red</button>
+        <button id="btn2">Blue</button>
+
+        <script>
+            var button = document.querySelector("#btn1");
+            button.addEventListener("click",function(){	       
+	        document.body.style.backgroundColor = "red";});
+
+            var button = document.querySelector("#btn2");
+            button.addEventListener("click",function(){	       
+	        document.body.style.backgroundColor = "blue";});
+
+        </script>
+    </body>
+</html>

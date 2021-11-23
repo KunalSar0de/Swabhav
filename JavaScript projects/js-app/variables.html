@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>    
+</body>
+<script>
+    var foo;
+    document.write("Type of foo initially : ");
+    document.write(typeof(foo));
+
+    var foo=10;
+    document.write("<br>Type of foo when assigned 10 : ");
+    document.write(typeof(foo));
+
+    var foo="kunal";
+    document.write("<br>Type of foo when assigned kunal : ");
+    document.write(typeof(foo));
+
+    var foo=10>5;
+    document.write("<br>Type of foo when assigned expression : ");
+    document.write(typeof(foo));
+
+    var foo=function(){
+        var x=10;
+        document.write("inside function");  
+    }
+    document.write("<br>Type of foo when assigned func : ");
+    document.write(typeof(foo));
+
+    var foo={};
+    document.write("<br>Type of foo when assigned {} : ");
+    document.write(typeof(foo));
+
+    document.write("<br>Type of this  : ");
+    document.writeln(typeof(this));
+    document.write("<br>is  foo.this is equalts window.this  : ");
+    document.writeln(foo.this==window.this);
+    
+</script>
+</html>
