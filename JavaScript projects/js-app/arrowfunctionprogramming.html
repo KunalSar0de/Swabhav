@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functional Programming</title>
+</head>
+<body>
+    
+<script>
+    var  nos=[10,20,30,40,50];
+    
+    //using forEach
+    nos.forEach(n=>console.log(n));
+    
+    console.log("\n");
+    //using filter  
+    nos.filter(n=>n>25)
+    .forEach(n=>console.log(n));
+   
+    
+    console.log("\n");
+    //using map
+    var  nos=["10","20","30","40","50"];
+    nos.map(n=>parseInt(n))
+    .filter(n=>n>35)
+    .forEach(n=>console.log(n));
+
+
+
+</script>
+
+
+</body>
+</html>

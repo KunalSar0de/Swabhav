@@ -4,7 +4,7 @@ namespace TicTacToeCore
 {
     public class Cell
     {
-        public MarkType _mark;
+        private MarkType _mark;
 
         public Cell()
         {
@@ -16,8 +16,12 @@ namespace TicTacToeCore
             if (_mark==MarkType.EMPTY)
             {
                 _mark = mark;
+            }
+            else
+            {
+                throw new Exception("Cell already marked");
             }         
-            throw new Exception("Cell already marked");   
+               
         }
         public MarkType GetMark
         {

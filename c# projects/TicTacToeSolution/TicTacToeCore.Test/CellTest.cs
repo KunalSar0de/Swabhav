@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using TicTacToeCore;
 
 namespace TicTacToeCore.Test
@@ -22,8 +23,11 @@ namespace TicTacToeCore.Test
         public void Test_IsCellAlreadyMarked()
         {
             cell.MarkCell(MarkType.X);
-            //cell.MarkCell(MarkType.O);
-            Assert.AreEqual(cell.GetMark, MarkType.X);
+            try
+            {
+                cell.MarkCell(MarkType.O);
+            }
+            catch (Exception ex) { }            
         }
     }
 }

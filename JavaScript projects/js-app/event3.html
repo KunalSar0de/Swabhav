@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>Event 3</h2>
+        <button id="btn1">Red</button>
+        <button id="btn2">Blue</button>
+
+        <script>
+            var button1=document.getElementById("btn1");
+            var button2=document.getElementById("btn2");
+            button1.value="red";
+            button2.value="blue";
+            function Listner(){
+             document.body.style.backgroundColor = this.value;
+            }
+            button1.addEventListener("click",Listner);
+            button2.addEventListener("click",Listner);	       
+        </script>
+    </body>
+</html>

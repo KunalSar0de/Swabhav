@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functional Programming</title>
+</head>
+<body>
+    
+<script>
+    var  nos=[10,20,30,40,50];
+    //using forEach
+    nos.forEach(Display);
+    
+    console.log("\n");
+    //using filter
+    nos.filter(IsNumGreaterThan_25).forEach(Display);
+    function IsNumGreaterThan_25(no){
+        return no>25 ;
+    }
+    
+    console.log("\n");
+    //using map
+    var  nos=["10","20","30","40","50"];
+    nos.map(ConvertToInt).filter(IsNumGreaterThan_25).forEach(Display);
+
+    function ConvertToInt(strNum){
+        return parseInt(strNum);
+    }
+
+    function Display(no){
+        console.log(no);
+    }
+</script>
+
+
+</body>
+</html>
