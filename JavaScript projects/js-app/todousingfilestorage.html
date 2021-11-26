@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>ToDo</title>
+</head>
+<style>
+    #todoInput
+    {
+        height:20px;
+        width: 200px;
+        font-size:14pt;
+        align-items: center;
+    }
+    #toDoList{
+        font-size: 14pt;
+        left: 0px;
+    }
+    .box{
+        width: 300px;
+        height: 400px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+    }
+</style>
+<body>
+    <div class="box">
+        <h1>To-Do list</h1>
+    <form id="todoForm">
+        <input id="todoInput" type="text">
+        <button type="button" id="button">Add To Do</button> 
+      </form>
+      <h1 id="text"></h1>
+      <ol id="toDoList"></ol>
+
+    </div>
+    
+        <script>
+                var todos = [];
+                document.getElementById('button').addEventListener('click', function ()
+                {
+                    var list = document.getElementById('toDoList');
+                    list.innerHTML = ''; 
+                    var todoInput = document.getElementById('todoInput').value;
+                    todos.push(todoInput)  
+                    localStorage.setItem("list", JSON.stringify(todos)); 
+                                       
+                    var item = document.createElement("li");
+                    
+                    for (var i = todos.length-1; i >= 0; i--)
+                    {
+                        var listItem = document.createTextNode(todos[i]);
+                        var li = document.createElement("li");
+                        li.appendChild(document.createTextNode(todos[i]));
+                        list.append(li);
+                    }
+                     
+                });
+                var storedList = JSON.parse(localStorage.getItem("list"));               
+                var list = document.getElementById('toDoList');
+                list.innerHTML='';
+                var item = document.createElement("li");
+                
+                    for (var i = storedList.length-1; i >= 0; i--)
+                    { 
+                        var listItem = document.createTextNode(storedList[i]);
+                        var li = document.createElement("li");
+                        li.appendChild(document.createTextNode(storedList[i]));
+                        list.append(li);
+                    }
+        </script>
+</body>
+</html>

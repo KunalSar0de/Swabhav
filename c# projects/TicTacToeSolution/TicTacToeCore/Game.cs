@@ -53,10 +53,10 @@ namespace TicTacToeCore
                 return _analyzer;
             }
         }
-        public Player GetCurrentPlayer
+        public string GetCurrentPlayer
         {
             get{
-                return _currentPlayer;
+                return _currentPlayer.GetPlayerName;
             } 
         }
     }

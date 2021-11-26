@@ -30,7 +30,7 @@ namespace TicTacToeCore.Test
             game.Play(5);//o=sohan
             //game.Play(7);//x=kunal
 
-            Assert.AreEqual<string>(game.GetCurrentPlayer.GetPlayerName, "kunal");
+            Assert.AreEqual<string>(game.GetCurrentPlayer, "kunal");
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace TicTacToeCore.Test
         }
 
         [TestMethod]
-        public void Test_CheckWinner()
+        public void Test_CheckWinCondition()
         {
             Player[] players = new Player[2];
             players[0] = new Player("kunal", MarkType.X);
@@ -58,13 +58,39 @@ namespace TicTacToeCore.Test
             Game game = new Game(players, new ResultAnalyzer(new Board()));
             while (game.GetStatus == ResultType.NO_RESULT)
             {
+                /* o E X
+                   o x E 
+                   x E x */
                 game.Play(2);//x
                 game.Play(0);//o
                 game.Play(4);//x
-                game.Play(3);//o
-                game.Play(7);//x   
+                game.Play(7);//o
+                game.Play(6);//x
+                
             }
             Assert.AreEqual(game.GetStatus,ResultType.WIN);
+        }
+
+        [TestMethod]
+        public void Test_CheckDrowCodition()
+        {
+            Player[] players = new Player[2];
+            players[0] = new Player("kunal", MarkType.X);
+            players[1] = new Player("sohan", MarkType.O);
+            Game game = new Game(players, new ResultAnalyzer(new Board()));
+            while (game.GetStatus == ResultType.NO_RESULT)
+            {              
+                game.Play(0);
+                game.Play(2);
+                game.Play(4);
+                game.Play(3);
+                game.Play(5);
+                game.Play(7);
+                game.Play(6);
+                game.Play(8);
+                game.Play(1);
+            }
+            Assert.AreEqual(game.GetStatus, ResultType.DRAW);
         }
     }
 }

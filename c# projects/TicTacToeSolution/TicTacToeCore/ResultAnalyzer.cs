@@ -12,7 +12,8 @@ namespace TicTacToeCore
         public ResultType Analyze()
         {
            
-            if (CheckRow().Equals(ResultType.WIN) || CheckColum().Equals(ResultType.WIN) || CheckDiagonal().Equals(ResultType.WIN))
+            if (CheckRow().Equals(ResultType.WIN) || CheckColum().Equals(ResultType.WIN) 
+                || CheckDiagonal().Equals(ResultType.WIN))
                 return ResultType.WIN;
             else if (_board.CheckBoardIsFull())
                 return ResultType.DRAW;

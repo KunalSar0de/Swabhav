@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TicTacToeCore;
 
 namespace TicTacToeConsoleApp
@@ -17,22 +13,22 @@ namespace TicTacToeConsoleApp
 
 
             Game game = new Game(players, new ResultAnalyzer(new Board()));
-            
 
+ 
             while (game.GetStatus ==ResultType.NO_RESULT)
             {
-              /* O E X
-                 E x o 
-                 E E x */
+              /* o x X
+                 o 0 E 
+                 o E 0 */
                 
                 game.Play(2);//x
                 game.Play(0);//o
-                game.Play(4);//x
-                game.Play(3);//o
-                game.Play(8);//x
-
-                
+                game.Play(1);//x
+                game.Play(4);//o
+                game.Play(7);//x
+               // game.Play();//o
             }
+           
         }
     }
 }
