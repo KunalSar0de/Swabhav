@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>using closure</h3>
+    <script>
+        function Customer(id,name){
+            this.id=id;
+            this.name=name;
+            var that=this;//used closure
+
+            this.show=function(){
+                console.log("id : "+ that.id + "\nname : "+ that.name);
+            }
+        }
+        var sachin=new Customer(1001,"sachin");
+        sachin.show();
+
+        var ref_sachins_show=sachin.show;
+        ref_sachins_show();
+    </script>
+</body>
+</html>

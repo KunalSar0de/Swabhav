@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function MakeStudent(){
+        var student={};
+        var _name,_rollNo;
+        student.setName=function(name){
+            if(name!=null){
+                _name=name;
+            }
+        }
+        student.setRollNo=function(rollNo){
+            if(rollNo>=1){
+                _rollNo=rollNo;
+            }    
+        }
+        student.getDetails=function(){
+            console.log("Name of student is : "+_name+"\nRoll no of student is : "+_rollNo);
+
+        }
+        return student;
+
+    }
+
+    var s1=MakeStudent();
+    s1.setName("kunal");
+    s1.setRollNo(4);
+   console.log(s1.getDetails());
+   console.log(s1); 
+
+
+</script>
+
+</body>
+</html>

@@ -19,9 +19,14 @@
     .box{
         width: 300px;
         height: 400px;
-        border: 15px solid green;
+        border: 15px solid #7EE481;
         padding: 50px;
         margin: 20px;
+    }
+    .btn{
+        background-color: #7EE481;
+        border-color: black;
+        height: 25px;
     }
 </style>
 <body>
@@ -29,7 +34,7 @@
         <h1>To-Do list</h1>
     <form id="todoForm">
         <input id="todoInput" type="text">
-        <button type="button" id="button">Add To Do</button> 
+        <button class="btn" type="button" id="button">Add To Do</button> 
       </form>
       <h1 id="text"></h1>
       <ol id="toDoList"></ol>
@@ -69,6 +74,7 @@
                         li.appendChild(document.createTextNode(storedList[i]));
                         list.append(li);
                     }
-        </script>
+               
+        </script> 
 </body>
 </html>

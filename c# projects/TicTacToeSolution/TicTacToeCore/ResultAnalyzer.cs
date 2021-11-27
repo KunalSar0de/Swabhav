@@ -22,11 +22,11 @@ namespace TicTacToeCore
 
         private ResultType CheckRow()
         {
-            if (ChechEveryCondition(0, 1, 2))
+            if (ChechEveryCondition(1,2,3))
                 return ResultType.WIN;
-            else if (ChechEveryCondition(3, 4, 5))
+            else if (ChechEveryCondition(4,5,6))
                 return ResultType.WIN;
-            else if (ChechEveryCondition(6, 7, 8))
+            else if (ChechEveryCondition(7,8,9))
                 return ResultType.WIN;
             return ResultType.NO_RESULT;   
         }
@@ -34,18 +34,18 @@ namespace TicTacToeCore
        
         private ResultType CheckColum()
         {
-            if (ChechEveryCondition(0, 3, 6))
+            if (ChechEveryCondition(1,4,7))
                 return ResultType.WIN;
-            else if (ChechEveryCondition(1, 4, 7))
+            else if (ChechEveryCondition(2,5,8))
                 return ResultType.WIN;
-            else if (ChechEveryCondition(2, 5, 8))
+            else if (ChechEveryCondition(3,5,7))
                 return ResultType.WIN;
             return ResultType.NO_RESULT;
         }
          
         private ResultType CheckDiagonal()
         {
-            if (ChechEveryCondition(0, 4, 8))
+            if (ChechEveryCondition(1,5,9))
                 return ResultType.WIN;
             else if (ChechEveryCondition(2, 4, 6))
                 return ResultType.WIN;
@@ -53,9 +53,10 @@ namespace TicTacToeCore
         }
         private bool ChechEveryCondition(int i, int j, int k)
         {
-            if (_board.GetAllCells[i].GetMark == _board.GetAllCells[j].GetMark &&
-                _board.GetAllCells[j].GetMark == _board.GetAllCells[k].GetMark &&
-                _board.GetAllCells[i].GetMark != MarkType.EMPTY)
+            
+            if (_board.GetAllCells[i-1].GetMark == _board.GetAllCells[j-1].GetMark &&
+                _board.GetAllCells[j-1].GetMark == _board.GetAllCells[k-1].GetMark &&
+                _board.GetAllCells[i-1].GetMark != MarkType.EMPTY)
                 return true;
             return false;
         }

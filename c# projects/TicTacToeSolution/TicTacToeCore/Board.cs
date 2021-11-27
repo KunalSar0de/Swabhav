@@ -38,11 +38,11 @@ namespace TicTacToeCore
 
         public void MarkCellAtPosition(int position,MarkType type)
         {
-            _cells[position].MarkCell(type);
+            _cells[position-1].MarkCell(type);
         }
         public MarkType GetMarkAtSpecificLocation(int location)
         {
-            return _cells[location].GetMark;
+            return _cells[location-1].GetMark;
         }
 
         public Cell[] GetAllCells

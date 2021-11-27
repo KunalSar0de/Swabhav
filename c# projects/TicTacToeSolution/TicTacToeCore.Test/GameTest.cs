@@ -58,15 +58,16 @@ namespace TicTacToeCore.Test
             Game game = new Game(players, new ResultAnalyzer(new Board()));
             while (game.GetStatus == ResultType.NO_RESULT)
             {
-                /* o E X
-                   o x E 
-                   x E x */
-                game.Play(2);//x
-                game.Play(0);//o
-                game.Play(4);//x
+                /*  X O X
+                    O X
+                    O   X  */
+                game.Play(1);//x
+                game.Play(2);//o
+                game.Play(3);//x
+                game.Play(4);//o
+                game.Play(5);//x
                 game.Play(7);//o
-                game.Play(6);//x
-                
+                game.Play(9);//x                
             }
             Assert.AreEqual(game.GetStatus,ResultType.WIN);
         }
@@ -80,15 +81,15 @@ namespace TicTacToeCore.Test
             Game game = new Game(players, new ResultAnalyzer(new Board()));
             while (game.GetStatus == ResultType.NO_RESULT)
             {              
-                game.Play(0);
-                game.Play(2);
+                game.Play(1);
                 game.Play(4);
+                game.Play(2);
                 game.Play(3);
                 game.Play(5);
-                game.Play(7);
-                game.Play(6);
                 game.Play(8);
-                game.Play(1);
+                game.Play(6);
+                game.Play(9);
+                game.Play(7);
             }
             Assert.AreEqual(game.GetStatus, ResultType.DRAW);
         }

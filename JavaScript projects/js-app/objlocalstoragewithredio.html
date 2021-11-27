@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;}
+</style>
+</head>
+<body>
+    <form id="form">
+        <input type="radio" name="radio" value="Male" id="maleButton"> 
+        <label for="maleButton">Male</label>
+        <input type="radio" name="radio" value="Female" id="femaleButton">
+        <label for="femaleButton">Female</label>
+        <input type="radio" name="radio" value="Other" id="other">
+        <label for="other">Other</label>
+    </form>
+
+<script>
+var students=[{
+    name:"kunal Sarode",
+    gender:"Male",
+    myLocation:"mumbai",
+    cgpa:7.5
+},
+{
+    name:"ojas",
+    gender:"Male",
+    myLocation:"delhi",
+    cgpa:6.4
+},
+{
+    name:"virushka",
+    gender:"Female",
+    myLocation:"mumbai",
+    cgpa:6.9
+},
+{
+    name:"vinay",
+    gender:"Male",
+    myLocation:"banglor",
+    cgpa:8.6
+},
+{
+    name:"sagar avhad",
+    gender:"Other",
+    myLocation:"haidrabad",
+    cgpa:9.9
+}];
+
+const form = document.querySelector('#form');
+const maleBtn = document.querySelector('#maleButton');
+const femaleBtn = document.querySelector('#femaleButton');
+const other = document.querySelector('#other');
+form.onclick = function () {
+            const rbs = document.querySelectorAll('input[name="radio"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            
+            
+        console.log("\nstudents with gender : "+selectedValue);
+        students.filter(student=>student.gender=="selectedValue")
+            .forEach(student=>console.log(student.name));
+        };
+//store to localstorage
+localStorage.setItem("students", JSON.stringify(students));
+//retrieving all students from localstorage
+console.log(localStorage["students"]);
+//display sttudents from mumbai
+
+
+//for location as city mumbai
+console.log("\nstudents with city as Mumbai:");
+students.filter(student=>student.myLocation=="mumbai")
+    .forEach(student=>console.log("name:"+student.name));
+
+//for cgpa>7
+console.log("\nstudents with cgpa greater than 7:");
+students.filter(student=>student.cgpa>7)
+    .forEach(student=>console.log("name:"+student.name,"\ncgpa:"+student.cgpa));
+
+console.log("\nstudents with long name:");
+students.filter(student=>student.name.length>5)
+    .forEach(student=>console.log(student.name));
+
+DisplayData();
+function DisplayData(){
+    var displayString="<table><tr><th>Name</th><th>Location</th><th>CGPA</th>"    
+    
+        function AddData(str){
+        displayString=displayString+"<tr><td>"+str["name"]+"</td><td>"+str["myLocation"]+"</td><td>"+str["cgpa"]+"</td></tr>";    
+    }
+
+    students.forEach(n=>AddData(n));
+    displayString=displayString+"</table>"
+    document.writeln(displayString);       
+}
+        
+
+</script>
+</body>
+</html>

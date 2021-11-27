@@ -21,7 +21,6 @@ namespace TicTacToeCore
             {
                 throw new Exception("Cell already marked");
             }         
-               
         }
         public MarkType GetMark
         {

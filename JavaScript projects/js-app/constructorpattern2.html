@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Customer(){
+        console.log("type of this:"+this);
+        var _id,_name;
+        this.setId=function(id){
+            if(id>=1){
+                _id=id;
+            }
+        }
+        this.setName=function(name){
+            if(name.length>0){
+                _name=name;
+            }
+        }
+        this.getDetails=function(){
+            return "id : "+_id+"\nname : "+_name;
+        }
+    }
+    var c1=new Customer();
+    c1.setId(101);
+    c1.setName("kunal");
+    console.log(c1.getDetails());
+
+    var c2=new Customer();
+    c2.setId(103);
+    c2.setName("sohan");
+    console.log(c2.getDetails());
+
+    Customer();
+</script>
+
+</body>
+</html>

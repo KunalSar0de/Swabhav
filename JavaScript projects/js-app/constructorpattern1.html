@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    function Customer(id,name){
+        this.id="C"+id;
+        console.log(this);
+        this.name=name.toUpperCase();
+        this.getDetails=function(){
+            return "Id is : "+this.id+"\nName is : "+name; 
+        }
+    }
+var c1=new Customer(1001,"kunal");
+console.log(c1);
+console.log(c1.getDetails());
+
+var c2= Customer(1001,"kunal");
+console.log(c2);
+console.log(c2.getDetails());
+
+</script>
+
+</body>
+</html>

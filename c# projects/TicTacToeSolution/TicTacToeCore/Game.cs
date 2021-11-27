@@ -16,19 +16,16 @@ namespace TicTacToeCore
         }
 
         public void Play(int location)
-        {         
-            if (_analyzer.GetBoard.GetAllCells[location].GetMark==MarkType.EMPTY)
+        {                  
+            if (_currentPlayer ==_player[0])
             {
-                if (_currentPlayer ==_player[0])
-                {
-                    _analyzer.GetBoard.MarkCellAtPosition(location, _player[0].GetPlayerMark);                        
-                    _currentPlayer=_player[1];
-                }else if (_currentPlayer ==_player[1])
-                {
-                    _analyzer.GetBoard.MarkCellAtPosition(location, _player[1].GetPlayerMark);
-                    _currentPlayer=_player[0];
-                }
-            }           
+                _analyzer.GetBoard.MarkCellAtPosition(location, _player[0].GetPlayerMark);                        
+                _currentPlayer=_player[1];
+            }else if (_currentPlayer ==_player[1])
+            {
+                _analyzer.GetBoard.MarkCellAtPosition(location, _player[1].GetPlayerMark);
+                _currentPlayer=_player[0];
+            }
         }
 
         public ResultType GetStatus
