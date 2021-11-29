@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blue Ball Game</title>
+</head>
+<body>
+    <div id="container">
+        <div class="container1">
+            <div id="startDiv">            
+                <h1>Blue Ball Game</h1>
+                <p>
+                    <br>RULES<br>
+                    1) you can select balls from 20-100<br>
+                    2) You have only 1 minute to complete your guesses<br>
+                    3) 4 tries for one user<br>                                
+                </p>        
+            </div>
+            <div id="rengeSelector">
+                <h3>Select Balls</h3>            
+                <div class="rangeslider">
+                    <input type="range" min="10" max="100"  class="myslider" id="sliderRange">
+                    <p>Number of balls: <span class="val"></span></p>
+                  </div>           
+                <button id="mybtn" class="btn">Start Game</button>
+            </div>
+        </div>    
+        <div class="container2">
+            <div class="startGame">
+                <h1>In container 2</h1>
+            </div>
+        </div>   
+    </div>
+
+
+<script>
+var noOfBalls=55;
+var rangeslider = document.querySelector("#sliderRange");
+var output = document.querySelector(".val");
+
+let btn=document.querySelector('mybtn');
+let div=document.querySelector('#container1');
+btn.addEventListener("click",function()
+{
+    if(div.style.display==="none"){
+        div.style.display==="block";
+    }else{
+        div.style.display==="none";
+    }
+})
+
+output.innerHTML="55";
+
+rangeslider.addEventListener("input",changeValue)
+    function changeValue(){
+        output.innerHTML = rangeslider.value;
+    }
+noOfBalls=output.innerHTML;
+console.log(noOfBalls);    
+
+
+</script>
+
+</body>
+</html>

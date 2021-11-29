@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif; 
+}
+#container{
+    width: 1150px;
+    height:500px;
+    background: #000;
+    border-radius: 15px;
+}
+
+#startDiv{
+    width: 1000px;
+    height:500px;
+    transform: translate(0, -50%);
+}
+#startDiv h1{  
+    position: absolute;            
+    top: 55%;
+    left: 38%;
+    color: #ffcb00;
+    font-size: 50px;
+}
+#startDiv p{  
+    position: absolute;            
+    top: 72%;
+    left: 33%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;;
+}
+#rengeSelector{
+    width: 1000px;
+    height:500px;
+    transform: translate(0, -50%);
+}
+#container #rengeSelector h3{  
+    position: absolute;            
+    top: 10%;
+    left: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+
+#container #rengeSelector .myslider{
+    position: absolute;
+    top: 0%;
+    left: 35.5%;
+    width: 40%;
+    margin:  10% auto;
+    -webkit-appearance: none;
+    height: 7px;
+    outline: none;
+    border-radius: 3px;
+}
+#container #rengeSelector p{
+    position: absolute;
+    top: 28%;
+    left: 48%;
+    color: #fff;
+}
+
+#container #rengeSelector .btn{
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    background-color: #ffcb00;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+#container #rengeSelector .btn:hover{
+    background-color: #fff;
+}
