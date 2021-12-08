@@ -1,0 +1,9 @@
+<p [innerText]="'Displaying img..'">spinner works!</p>
+<div>
+    <input type="checkbox" [value]="check" (click)=handleCheckToggle($event) #checkValue/>
+    <label >{{check}}</label>
+    <!-- <input type="button" [value]="btnTxt" (click)="handleButtonToggle($event)"/> -->
+</div>
+<div>
+    <img [hidden]="hideImage"[src]="imageUrl"/>
+</div>

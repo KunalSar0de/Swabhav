@@ -1,0 +1,8 @@
+<p>discount works!</p>
+<div>
+    Enter Amount:<input type="text" #amountTxt/><br><br>
+    Enter Rate  :<input type="text" #rateTxt/><br><br>
+    <input type="button" value="Calculate" 
+    (click)=calculateHandler(amountTxt.value,rateTxt.value)/><br>
+    {{discountOutput}}
+</div>

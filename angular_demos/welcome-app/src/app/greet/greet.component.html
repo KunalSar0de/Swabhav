@@ -1,0 +1,5 @@
+<div>
+    Enter a name:<input type="text" value="kunal" #txtUserName/>
+    <br><input type="button" value="greet" (click)="handleGreet(txtUserName.value)"/>
+    <br>{{greetingMsg}}
+</div>
