@@ -8,6 +8,13 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { GreetComponent } from './greet/greet.component';
 import { DiscountComponent } from './discount/discount.component';
 import { LppoingComponent } from './looping/looping.component';
+import { StudentComponent } from './student/student.component';
+import { SnakeCasePipe } from './snake-case.pipe';
+import { StudentassComponent } from './studentass/studentass.component';
+import { RowcolorPipe } from './rowcolor.pipe';
+import { ProductItemComponent } from './products/product-item.commponent';
+import { ProductListComponent } from './products/product-list.component';
+import { ProductService } from './products/product.service';
 
 @NgModule({
   declarations: [
@@ -17,12 +24,18 @@ import { LppoingComponent } from './looping/looping.component';
     SpinnerComponent,
     GreetComponent,
     DiscountComponent,
-    LppoingComponent
+    LppoingComponent,
+    StudentComponent,
+    SnakeCasePipe,
+    StudentassComponent,
+    RowcolorPipe,
+    ProductItemComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [WelcomeComponent]
 })
 export class AppModule { }

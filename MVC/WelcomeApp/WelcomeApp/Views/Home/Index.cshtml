@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @if (@ViewBag.username == "No username")
+        {
+            <h3>No user</h3>
+        }
+        else
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                <h3>@ViewBag.username @i </h3>
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<p>student assignment works!</p>
+<div>
+    <input type="button"value="Display" (click)=InitiateEntries()/>
+    <table>
+        <thead>
+            <td>{{fullname}}</td>
+            <td>{{cgpa}}</td>
+            <td>{{doj}}</td>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students" 
+            [ngStyle]="{'background-color': (student.cgpa>8) ? '#53F177' 
+            :  (student.cgpa>7&&student.cgpa<7.9)?'#61A6F4':'#F46161'}">
+                <td> {{student.fullname }}</td>
+                <td>{{student.cgpa |cgpaToBandColor }}</td>
+                <td>{{student.doj|date:'short'}}</td> 
+            </tr>
+        </tbody>
+    </table>
+
+</div>
