@@ -15,6 +15,7 @@ import { RowcolorPipe } from './rowcolor.pipe';
 import { ProductItemComponent } from './products/product-item.commponent';
 import { ProductListComponent } from './products/product-list.component';
 import { ProductService } from './products/product.service';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductService } from './products/product.service';
     StudentassComponent,
     RowcolorPipe,
     ProductItemComponent,
-    ProductListComponent
+    ProductListComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule

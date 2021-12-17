@@ -24,4 +24,10 @@ export class WelcomeComponent implements OnInit{
       this.today=new Date().toString()
     },3000)
   }
+
+  ratingClickHandler(e:string){
+    console.log(e)
+    console.log(e.toUpperCase())
+    this.message=e.toUpperCase()
+  }
 }

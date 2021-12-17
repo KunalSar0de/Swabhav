@@ -1,0 +1,24 @@
+﻿@using WelcomeApp.ViewModel.Session
+@model SessionIndexViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <p>
+            <h1>Session Counter</h1>
+            Old Counter : <h1>@Model.OldCounterValue</h1>
+            New Counter : <h1>@Model.NewCounterValue</h1>
+            Session Id : <h1>@Model.SessionIdValue</h1>
+        </p>
+    </div>
+</body>
+</html>

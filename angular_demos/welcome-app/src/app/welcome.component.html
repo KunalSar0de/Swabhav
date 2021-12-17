@@ -31,7 +31,10 @@ Bootstrap--
   <sw-product-item></sw-product-item>
 </div>
 -->
-
-<sw-studentass></sw-studentass>
-<!-- <sw-product-list></sw-product-list> -->
+<div class="container">
+  {{message}}
+  <sw-star [rating]="3.5" (ratingClick)="ratingClickHandler($event)"></sw-star>
+  <hr/>
+  <sw-star [rating]="4" (ratingClick)="ratingClickHandler($event)"></sw-star>
+</div>
 <sw-footer></sw-footer>
