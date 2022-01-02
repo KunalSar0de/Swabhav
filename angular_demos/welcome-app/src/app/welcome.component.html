@@ -30,11 +30,23 @@ Bootstrap--
 <div class="container">
   <sw-product-item></sw-product-item>
 </div>
--->
+
 <div class="container">
   {{message}}
   <sw-star [rating]="3.5" (ratingClick)="ratingClickHandler($event)"></sw-star>
   <hr/>
   <sw-star [rating]="4" (ratingClick)="ratingClickHandler($event)"></sw-star>
 </div>
+
+<sw-product-list></sw-product-list>
+
+<sw-thumbnail></sw-thumbnail>
+
+<div>
+  <h1>Goal Score : {{(goalDetails | async)?.goalCount}}</h1>
+  <h1>At : {{(goalDetails | async)?.time | date:'mediumTime'}}</h1>
+</div>
+-->
+
+<sw-number-api></sw-number-api>
 <sw-footer></sw-footer>

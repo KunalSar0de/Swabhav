@@ -13,7 +13,7 @@ import { ProductService } from "./product.service";
     `
 })
 export class ProductItemComponent implements OnInit{
-    product:Product=new Product(0,"")
+    product:Product=new Product(0,"",1)
 
     constructor(private productService:ProductService){
 

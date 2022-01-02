@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-danger" (click)="ClearImg()">Clear</button>
+<div class="container">
+    <div *ngFor="let image of images">
+        <img class="images"[src]='image.url'(click)="changeMainImg(image.url)" />
+    </div>
+</div>
+<div class="bigimage" *ngIf="isClear==false">
+    <img class="img" src={{mainImage}} alt="big image"/>
+</div>
+

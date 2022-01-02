@@ -10,11 +10,11 @@ export class ProductService {
 
   constructor() {
     console.log("Service created...") 
-    this.products.push(new Product(101,"book"))
-    this.products.push(new Product(102,"pen"))
-    this.products.push(new Product(103,"pencil"))
-    this.products.push(new Product(104,"watch"))
-    this.products.push(new Product(105,"laptop"))
+    this.products.push(new Product(101,"book",3.5))
+    this.products.push(new Product(102,"pen",4.5))
+    this.products.push(new Product(103,"pencil",2))
+    this.products.push(new Product(104,"watch",1.5))
+    this.products.push(new Product(105,"laptop",5))
   }
 
   getProducts(){

@@ -16,6 +16,9 @@ import { ProductItemComponent } from './products/product-item.commponent';
 import { ProductListComponent } from './products/product-list.component';
 import { ProductService } from './products/product.service';
 import { StarComponent } from './star/star.component';
+import { ThumbnailComponent } from './thumbnail/thumbnail.component';
+import { NumberApiComponent } from './number-api/number-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,14 @@ import { StarComponent } from './star/star.component';
     RowcolorPipe,
     ProductItemComponent,
     ProductListComponent,
-    StarComponent
+    StarComponent,
+    ThumbnailComponent,
+    NumberApiComponent
+ 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [ProductService],
   bootstrap: [WelcomeComponent]
